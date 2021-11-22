@@ -12,6 +12,8 @@ class Player;
 #include "card.h"
 
 typedef std::map<std::string, std::pair<char, char>> CONTINENT_DATA;
+// We store the player number as a uint8_t. This does give us a maximum player count of 256. Should be plenty.
+typedef char PLAYER_NUMBER;
 
 class Player{
 public:
@@ -35,7 +37,7 @@ public:
 	void removeTerritory(Territory* t);
 
 private:
-	char player_num;
+	PLAYER_NUMBER player_num;
 	char num_territories = 0;
 	std::list<Territory*> territories;
 	std::list<Card> cards;
