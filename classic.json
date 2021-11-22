@@ -1,0 +1,280 @@
+{
+    "Africa": {
+    	"value": 3,
+        "territories": {
+            "Congo": {
+                "East Africa": true,
+                "North Africa": true,
+                "South Africa": true
+            },
+            "East Africa": {
+                "Congo": true,
+                "Egypt": true,
+                "Madagascar": false,
+                "North Africa": true,
+                "South Africa": true
+            },
+            "Egypt": {
+                "East Africa": true,
+                "Middle East": true,
+                "North Africa": true,
+                "Southern Europe": false
+            },
+            "Madagascar": {
+                "East Africa": false,
+                "South Africa": false
+            },
+            "North Africa": {
+                "Brazil": false,
+                "Congo": true,
+                "East Africa": true,
+                "Egypt": true,
+                "Southern Europe": false,
+                "Western Europe": true
+            },
+            "South Africa": {
+                "Congo": true,
+                "East Africa": true,
+                "Madagascar": false
+            }
+        }
+    },
+    "Asia": {
+    	"value": 7,
+        "territories": {
+            "Afghanistan": {
+                "China": true,
+                "India": true,
+                "Middle East": true,
+                "Ukraine": true,
+                "Ural": true
+            },
+            "China": {
+                "Afghanistan": true,
+                "India": true,
+                "Mongolia": true,
+                "Siam": true,
+                "Siberia": true,
+                "Ural": true
+            },
+            "India": {
+                "Afghanistan": true,
+                "China": true,
+                "Middle East": true,
+                "Siam": true
+            },
+            "Irkutsk": {
+                "Kamchatka": true,
+                "Mongolia": true,
+                "Siberia": true,
+                "Yakursk": true
+            },
+            "Japan": {
+                "Kamchatka": false,
+                "Mongolia": false
+            },
+            "Kamchatka": {
+                "Alaska": false,
+                "Irkutsk": true,
+                "Japan": false,
+                "Mongolia": true,
+                "Yakursk": true
+            },
+            "Middle East": {
+                "Afghanistan": true,
+                "Egypt": true,
+                "India": true,
+                "Southern Europe": true,
+                "Ukraine": true
+            },
+            "Mongolia": {
+                "China": true,
+                "Irkutsk": true,
+                "Japan": false,
+                "Kamchatka": true,
+                "Siberia": true
+            },
+            "Siam": {
+                "China": true,
+                "India": true,
+                "Indonesia": true
+            },
+            "Siberia": {
+                "China": true,
+                "Irkutsk": true,
+                "Mongolia": true,
+                "Ural": true,
+                "Yakursk": true
+            },
+            "Ural": {
+                "Afghanistan": true,
+                "China": true,
+                "Siberia": true,
+                "Ukraine": true
+            },
+            "Yakursk": {
+                "Irkutsk": true,
+                "Kamchatka": true,
+                "Siberia": true
+            }
+        }
+    },
+    "Europe": {
+    	"value": 5,
+        "territories": {
+            "Great Britain": {
+                "Iceland": false,
+                "Northern Europe": false,
+                "Scandinavia": false,
+                "Western Europe": false
+            },
+            "Iceland": {
+                "Great Britain": false,
+                "Greenland": false,
+                "Scandinavia": false
+            },
+            "Northern Europe": {
+                "Great Britain": false,
+                "Scandinavia": true,
+                "Southern Europe": true,
+                "Ukraine": true,
+                "Western Europe": true
+            },
+            "Scandinavia": {
+                "Great Britain": false,
+                "Iceland": false,
+                "Northern Europe": true,
+                "Ukraine": true
+            },
+            "Southern Europe": {
+                "Egypt": false,
+                "Middle East": true,
+                "North Africa": false,
+                "Northern Europe": true,
+                "Ukraine": true,
+                "Western Europe": true
+            },
+            "Ukraine": {
+                "Afghanistan": true,
+                "Middle East": true,
+                "Northern Europe": true,
+                "Scandinavia": true,
+                "Southern Europe": true,
+                "Ural": true
+            },
+            "Western Europe": {
+                "Great Britain": false,
+                "North Africa": true,
+                "Northern Europe": true,
+                "Southern Europe": true
+            }
+        }
+    },
+    "North America": {
+    	"value": 5,
+        "territories": {
+            "Alaska": {
+                "Alberta": true,
+                "Kamchatka": false,
+                "Northwest Territory": true
+            },
+            "Alberta": {
+                "Alaska": true,
+                "Northwest Territory": true,
+                "Ontario": true,
+                "Western United States": true
+            },
+            "Central America": {
+                "Eastern United States": true,
+                "Venezuela": true,
+                "Western United States": true
+            },
+            "Eastern United States": {
+                "Central America": true,
+                "Ontario": true,
+                "Quebec": true,
+                "Western United States": true
+            },
+            "Greenland": {
+                "Iceland": false,
+                "Northwest Territory": false,
+                "Ontario": false,
+                "Quebec": false
+            },
+            "Northwest Territory": {
+                "Alaska": true,
+                "Alberta": true,
+                "Greenland": false,
+                "Ontario": true
+            },
+            "Ontario": {
+                "Alberta": true,
+                "Eastern United States": true,
+                "Greenland": false,
+                "Northwest Territory": true,
+                "Quebec": true,
+                "Western United States": true
+            },
+            "Quebec": {
+                "Eastern United States": true,
+                "Greenland": false,
+                "Ontario": true
+            },
+            "Western United States": {
+                "Alberta": true,
+                "Central America": true,
+                "Eastern United States": true,
+                "Ontario": true
+            }
+        }
+    },
+    "Oceania": {
+    	"value": 2,
+        "territories": {
+            "Eastern Australia": {
+                "New Guinea": false,
+                "Western Australia": true
+            },
+            "Indonesia": {
+                "New Guinea": false,
+                "Siam": false,
+                "Western Australia": false
+            },
+            "New Guinea": {
+                "Eastern Australia": false,
+                "Indonesia": false,
+                "Western Australia": false
+            },
+            "Western Australia": {
+                "Eastern Australia": true,
+                "Indonesia": false,
+                "New Guinea": false
+            }
+        }
+    },
+    "South America": {
+    	"value": 2,
+        "territories": {
+            "Argentina": {
+                "Brazil": true,
+                "Peru": true
+            },
+            "Brazil": {
+                "Argentina": true,
+                "North Africa": false,
+                "Peru": true,
+                "Venezuela": true
+            },
+            "Peru": {
+                "Argentina": true,
+                "Brazil": true,
+                "Venezuela": true
+            },
+            "Venezuela": {
+                "Brazil": true,
+                "Central America": true,
+                "Peru": true
+            }
+        }
+    }
+}
