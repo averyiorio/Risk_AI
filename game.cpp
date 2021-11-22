@@ -87,6 +87,8 @@ void Game::attack(Territory* attacker, Territory* defender) {
 				attacker->army--;
 			}
 		}
+		attack_dice.clear();
+		defend_dice.clear();
 		if (defender->army == 0) {
 			defender->army = attacker->army - 1;
 			attacker->army = 1;
