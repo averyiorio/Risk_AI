@@ -13,7 +13,7 @@ using json = nlohmann::json;
 //Function to read in json files with "map data"
 //It works ?
 void read_map(const std::string& file, std::vector<Territory>& territories,
- std::map<std::string, std::pair<char, char>> cd) {
+ std::map<char, std::pair<char, char>>& cd, Game& g) {
 	//Declare file stream
 	std::ifstream in_str(file + ".json");
 	json data;
@@ -37,10 +37,12 @@ void read_map(const std::string& file, std::vector<Territory>& territories,
 		++val_itr;
 		//Trick it into being an int :)
 		values.second = (int) *val_itr;
-		cd[continent.key()] = values;
+		cd[i] = values;
 		++continent;
 		++i;
 	}
+
+	g.addTerritories(territories);
 		
 	int t = 0;
 	for(continent = data.begin(); continent != data.end(); ++continent) {
@@ -50,7 +52,7 @@ void read_map(const std::string& file, std::vector<Territory>& territories,
 		 		std::string name = adj_itr.key();
 				for(unsigned int i = 0; i < territories.size(); i++) {
 					if(name == territories[i].getName()) {
-						territories[t].addAdjacent(&territories[i], *adj_itr);
+						g.getTerritory(t).addAdjacent(&g.getTerritory(i), *adj_itr);
 					}
 				}
 			}

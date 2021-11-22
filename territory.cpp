@@ -31,7 +31,7 @@ void Territory::print() const {
         std::cout << "Nobody" << std::endl;
     }
     else {
-        std::cout << "Player " << (int)(player->getPlayerNum()) << std::endl;
+        std::cout << "Player " << (int)(player->getPlayer()) << std::endl;
     }
     std::cout << "\tCurrently holds " << army << " units" << std::endl;
 }

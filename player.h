@@ -11,7 +11,7 @@ class Player;
 #include "territory.h"
 #include "card.h"
 
-typedef std::map<std::string, std::pair<char, char>> CONTINENT_DATA;
+typedef std::map<char, std::pair<char, char>> CONTINENT_DATA;
 
 class Player{
 public:

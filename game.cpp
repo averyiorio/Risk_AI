@@ -43,8 +43,8 @@ void Game::initialize(std::vector<short>& armies) {
 	player = players.begin();
 }
  
-void Game::deploy(char terr_index) {
-	territories[terr_index].addArmy(1);
+void Game::deploy(Territory * terr) {
+	terr->addArmy(1);
 }
 
 void Game::print_data() const {
@@ -62,7 +62,6 @@ void Game::print_data() const {
 }
 
 char roll_dice() {
-	srand((unsigned) time(0));
 	return 1 + (rand() % 6);
 }
 
@@ -70,16 +69,16 @@ void Game::attack(Territory* attacker, Territory* defender) {
 	std::vector<int> attack_dice;
 	std::vector<int> defend_dice;
 	while (attacker->army > 1) {
-		for (int rolls = 0; rolls < std::min((short)3, attacker->army); rolls++) {
+		for (int rolls = 0; rolls < std::min(3, attacker->army-1); rolls++) {
 			attack_dice.push_back(roll_dice());
 		}
 		for (int rolls = 0; rolls < std::min((short)2, defender->army); rolls++) {
-			attack_dice.push_back(roll_dice());
+			defend_dice.push_back(roll_dice());
 		}
 		std::sort(attack_dice.begin(), attack_dice.end());
-		std::sort(attack_dice.begin(), attack_dice.end());
+		std::sort(defend_dice.begin(), defend_dice.end());
 
-		for (unsigned int die = 0; die < defend_dice.size(); die++) {
+		for (unsigned int die = 0; die < std::min(attack_dice.size(), defend_dice.size()); die++) {
 			if (attack_dice[die] > defend_dice[die]) {
 				defender->army--;
 			}
@@ -90,9 +89,36 @@ void Game::attack(Territory* attacker, Territory* defender) {
 		attack_dice.clear();
 		defend_dice.clear();
 		if (defender->army == 0) {
+			defender->player->removeTerritory(defender);
+			attacker->player->addTerritory(defender);
 			defender->army = attacker->army - 1;
 			attacker->army = 1;
+
+			if(defender->player->getNumTerritories() == 0) {
+				std::list<Card> cards = defender->player->getCards();
+				std::list<Card>::iterator c_itr = cards.begin();
+				for(; c_itr != cards.end(); ++c_itr) {
+					attacker->player->addCard(*c_itr);
+				}
+				players.erase(defender->player->getPlayer());
+			}
+
 			defender->player = attacker->player;
+			return;
 		}
+	}
+}
+
+void Game::move(Territory * first, Territory * second, short amount) {
+	first->addArmy(-amount);
+	second->addArmy(amount);
+}
+
+void Game::nextPlayer() {
+	++player;
+	if(player == players.end()) {
+		player = players.begin();
+		turn++;
+		std::cout<<"Turn"<<turn<<" ended"<<std::endl;
 	}
 }

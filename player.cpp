@@ -7,7 +7,7 @@
 #include "territory.h"
 #include "card.h"
 
-typedef std::map<std::string, std::pair<char, char>> CONTINENT_DATA;
+typedef std::map<char, std::pair<char, char>> CONTINENT_DATA;
 
 char Player::getContinentIncome(CONTINENT_DATA cd) const {
 	char troop_bonus = 0;
@@ -49,6 +49,7 @@ void Player::removeTerritory(Territory* t) {
 	for (; itr != territories.end(); itr++) {
 		if (*itr == t) {
 			territories.erase(itr);
+			num_territories--;
 			return;
 		}
 	}
