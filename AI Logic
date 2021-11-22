@@ -1,1 +1,25 @@
-test file
+AI Logic
+-2 different loops will evaluate moves and the game
+-scoring the board
+	-Overall Function
+		-Some function to evaluate the score of the board will be determined by the neural net that evaluates based on following inputs
+		-total # of inputs into the scoring function: 127
+			-126 inputs from territories 
+			-1 input accounting for troops
+	-Territories-total of 126 inputs, 3 per territory		
+		-Adjacencies
+			-# of adjacent territory nodes (1-6)
+			-ReLu (1-6)=input
+		-Owner of the continent set
+			-does the player own it?
+			-(0-1), #of territories in that set owned by player/# of total territories in that set
+		-Set bonus
+			-Is the set producing a bonus (0,1), 0 for no, 1 for yes
+	-Troops
+		-evaluate after each turn cycle (after all other players have gone), at the end of the turn (after the fortify phase)
+		- ReLu[t(friendly)-t(enemy)]=input
+		-the change in friendly troops on the board minus the change in enemy troops on the board
+
+
+-evaluating moves
+		
