@@ -28,7 +28,7 @@ char Player::getContinentIncome(CONTINENT_DATA cd) const {
 }
 
 short Player::getIncome(CONTINENT_DATA cd) const {
-	return floor(num_territories) + getContinentIncome(cd);
+	return std::max(3, (int)floor(num_territories/3)) + getContinentIncome(cd);
 }
 
 bool Player::playCards(const Card& c1, const Card& c2, const Card& c3) {

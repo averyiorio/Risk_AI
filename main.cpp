@@ -190,6 +190,8 @@ int main() {
 
 	while(game.getPlayers().size() > 1) {
 
+		std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" deploys "<<
+		game.getPlayer()->getIncome(cd)<<" armies"<<std::endl;
 		for(int i = 0; i < game.getPlayer()->getIncome(cd); ++i) {
 			deploy_weights dweights = generateDeployWeights(game);
 			trimDeploy(dweights, game);
@@ -235,4 +237,6 @@ int main() {
 		game.nextPlayer();
 		game.print_data();
 	}
+
+	std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
 }

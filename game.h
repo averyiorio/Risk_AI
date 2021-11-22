@@ -17,6 +17,8 @@ public:
 
 	void addPlayer(char index);
 
+	int getTurn() const {return turn; };
+
 	//Starts the next players turn in deploy stage
 	void deploy(Territory * terr);
 	//Starts the next players turn in attack stage
