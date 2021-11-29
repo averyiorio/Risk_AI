@@ -192,7 +192,7 @@ int main() {
 
 		Player * player = player;
 		short armies = player->getIncome(cd);
-		std::list<Card> pcards = player.getCards();
+		std::list<Card> pcards = player->getCards();
 		if(player->getNumCards() == 3) {
 			
 		}
@@ -256,5 +256,5 @@ int main() {
 		game.print_data();
 	}
 
-	std::cout<<"Player "<<(int)player->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
+	std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
 }
