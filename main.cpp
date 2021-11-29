@@ -249,5 +249,9 @@ int main() {
 		read_map(file, territories, cd, game);
 		runGame(game, players, cd, i);
 		std::cout<<"done with game "<<i<<std::endl;
+		players++;
+		if(players > 6) {
+			players = 2;
+		}
 	}
 }
