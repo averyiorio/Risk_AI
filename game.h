@@ -43,6 +43,8 @@ public:
 	void print_data(json& output) const;
 
 	Territory& getTerritory(char i)  { return territories[i]; };
+	const std::vector<Territory>& getTerritories()  { return territories; };
+	void setTerritories(const std::vector<Territory>& newT)  { territories = newT; };
 
 	void initialize(std::vector<short>& armies);
 

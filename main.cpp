@@ -133,35 +133,7 @@ attack_weights generateMoveWeights(const Game& g) {
 	return weights;
 }
 
-int main() {
-	int players;
-	std::cout<<"How many players?"<<std::endl;
-	std::cin>>players;
-	std::cout<<"What map would you like to play?"<<std::endl
-	<<"Options:"<<std::endl
-	<<"\t[0]Classic"<<std::endl;
-	int map;
-	std::cin>>map;
-	std::string file = "";
-	if(map == 0) {
-		file = "classic";
-	}
-	
-	srand((unsigned) time(0));
-
-	//Create a vector of current territories
-	std::vector<Territory> territories;
-	//Fill those territories with the "classic map"
-	CONTINENT_DATA cd;
-
-	std::list<Card> cards;
-
-	for(unsigned int i = 0; i < territories.size(); ++i) {
-		cards.push_front(Card(territories[i].getName(), i % 3));
-	}
-	Game game(cards);
-	read_map(file, territories, cd, game);
-
+void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 	for(int i = 0; i < players; ++i) {
 		game.addPlayer(i);
 	}
@@ -172,7 +144,7 @@ int main() {
 	} 
 
 	game.initialize(armies);
-	game.print_data();
+	// game.print_data();
 
 	for(char p = 0; p < players; ++p) {
 		for(int i = 1; i < armies[p]; ++i) {
@@ -189,7 +161,7 @@ int main() {
 		game.nextPlayer();
 	}
 	
-	game.print_data();
+	// game.print_data();
 
 	json output;
 	while(game.getPlayers().size() > 1) {
@@ -200,8 +172,6 @@ int main() {
 		if(player->getNumCards() == 3) {
 			
 		}
-		std::cout<<"Player "<<(int)player->getPlayer()<<" deploys "<<
-		armies<<" armies:"<<std::endl;
 		std::map<Territory*, int> deploy_map;
 		for(int i = 0; i < armies; ++i) {
 			deploy_weights dweights = generateDeployWeights(game);
@@ -214,11 +184,6 @@ int main() {
 			}
 			deploy_map[best->first] += 1;
 			game.deploy(best->first);
-		}
-
-		for(std::map<Territory*, int>::iterator m_itr = deploy_map.begin();
-			m_itr != deploy_map.end(); ++m_itr) {
-			std::cout<<"\t"<<m_itr->second<<" to "<<m_itr->first->getName()<<std::endl;
 		}
 
 
@@ -234,9 +199,6 @@ int main() {
 			if(best->second.second < 0.6 || aweights.size() == 0) {
 				break;
 			}
-			std::cout<<best->first->getName()<<"("<<(int)player->getPlayer()<<")"
-			<<" attacks "<<best->second.first->getName()<<"("<<
-			(int)best->second.first->getPlayer()->getPlayer()<<")"<<std::endl;
 			game.attack(best->first, best->second.first);
 		}
 
@@ -252,16 +214,40 @@ int main() {
 			short num = best->first->getArmy();
 			num *= best->second.second;
 			game.move(best->first, best->second.first, num);
-			std::cout<<(int)player->getPlayer()<<" moves "<<num
-			<<" from "<<best->first->getName()<<" to "<<
-			best->second.first->getName()<<std::endl;
 		}
 		game.nextPlayer();
-		game.print_data();
 		game.print_data(output);
 	}
-
-	std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
-	std::ofstream o("output.json");
+	std::string file = "games/" + std::to_string(i) + ".json";
+	std::ofstream o(file);
 	o << std::setw(4) << output << std::endl;
+}
+
+int main() {
+	int players = 2;
+	std::string file = "classic";
+	
+	srand((unsigned) time(0));
+
+	//Create a vector of current territories
+	std::vector<Territory> territories;
+	//Fill those territories with the "classic map"
+	CONTINENT_DATA cd;
+
+	std::list<Card> cards;
+
+	for(unsigned int i = 0; i < territories.size(); ++i) {
+		cards.push_front(Card(territories[i].getName(), i % 3));
+	}
+
+	//START GAME STUFF
+
+	for(int i = 0; i < 100; ++i) {
+		Game game(cards);
+		territories.clear();
+		cd.clear();
+		read_map(file, territories, cd, game);
+		runGame(game, players, cd, i);
+		std::cout<<"done with game "<<i<<std::endl;
+	}
 }

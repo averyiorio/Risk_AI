@@ -128,6 +128,6 @@ void Game::nextPlayer() {
 	if(player == players.end()) {
 		player = players.begin();
 		turn++;
-		std::cout<<"Turn"<<turn<<" ended"<<std::endl;
+		// std::cout<<"Turn"<<turn<<" ended"<<std::endl;
 	}
 }
