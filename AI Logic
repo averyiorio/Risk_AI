@@ -19,7 +19,34 @@ AI Logic
 		-evaluate after each turn cycle (after all other players have gone), at the end of the turn (after the fortify phase)
 		- ReLu[t(friendly)-t(enemy)]=input
 		-the change in friendly troops on the board minus the change in enemy troops on the board
-
+	-Outputs:
+		-did "score" improve? (0,1)
+		-by what factor did a score improve (0-1)
 
 -evaluating moves
-		
+	-outputs:
+		-should an action be taken on this square (0-1)
+		-should troops be added or taken (0-1)
+			-adding troops should hopefully account for the deployment and fortification phases
+		-Should an attack occur?
+		-how many trooops should we attack with?
+
+	-inputs-**These are not necessarily final but i am trying to consider the simplest way to contain the information that we need about any given territory in as little inputs as possible)
+		-1 input
+			-adjacencies ReLu(1-6)
+		-6 inputs
+			-ReLu(# of troops in each adjacent territory)
+		-1 input
+			-ReLu (# of troops in territory in question)
+		-1 input
+			-is it producing a set bonus (0,1)
+		-1 input
+			-What player is it producing a set bonus for? (need to figure out value for not producing)
+		-7 inputs
+			-Do we own it? (0,1)
+		-1 input
+			-what player owns the territory we are looking at? 
+		-6 inputs
+			-is it owned by the same player as above? (0,1)
+			-If its owned by the same player as as the territory in question, hopefully the AI will understand that those territories will also react depending on what you do to that territory
+		-
