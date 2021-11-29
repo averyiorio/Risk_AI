@@ -190,7 +190,7 @@ int main() {
 
 	while(game.getPlayers().size() > 1) {
 
-		Player * player = player;
+		Player * player = game.getPlayer();
 		short armies = player->getIncome(cd);
 		std::list<Card> pcards = player->getCards();
 		if(player->getNumCards() == 3) {
