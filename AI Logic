@@ -32,16 +32,12 @@ AI Logic
 		-how many trooops should we attack with?
 
 	-inputs-**These are not necessarily final but i am trying to consider the simplest way to contain the information that we need about any given territory in as little inputs as possible)
-		-1 input
-			-adjacencies ReLu(1-6)
 		-6 inputs
 			-ReLu(# of troops in each adjacent territory)
 		-1 input
 			-ReLu (# of troops in territory in question)
 		-1 input
 			-is it producing a set bonus (0,1)
-		-1 input
-			-What player is it producing a set bonus for? (need to figure out value for not producing)
 		-7 inputs
 			-Do we own it? (0,1)
 		-1 input
