@@ -21,6 +21,7 @@ public:
 	//ACCESSORS
 	char getPlayer() const {return player_num;}
 	char getNumCards() const {return cards.size();}
+	std::list<Card> getCards() const {return cards}
 	const std::list<Card>& getCards() const {return cards;}
 	char getNumTerritories() const {return num_territories;}
 	const std::list<Territory*>& getTerritories() const {return territories;}

@@ -190,10 +190,16 @@ int main() {
 
 	while(game.getPlayers().size() > 1) {
 
-		std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" deploys "<<
-		game.getPlayer()->getIncome(cd)<<" armies:"<<std::endl;
+		Player * player = player;
+		short armies = player->getIncome(cd);
+		std::list<Card> pcards = player.getCards();
+		if(player->getNumCards() == 3) {
+			
+		}
+		std::cout<<"Player "<<(int)player->getPlayer()<<" deploys "<<
+		armies<<" armies:"<<std::endl;
 		std::map<Territory*, int> deploy_map;
-		for(int i = 0; i < game.getPlayer()->getIncome(cd); ++i) {
+		for(int i = 0; i < armies; ++i) {
 			deploy_weights dweights = generateDeployWeights(game);
 			trimDeploy(dweights, game);
 			deploy_weights::iterator best = dweights.begin();
@@ -224,7 +230,7 @@ int main() {
 			if(best->second.second < 0.6 || aweights.size() == 0) {
 				break;
 			}
-			std::cout<<best->first->getName()<<"("<<(int)game.getPlayer()->getPlayer()<<")"
+			std::cout<<best->first->getName()<<"("<<(int)player->getPlayer()<<")"
 			<<" attacks "<<best->second.first->getName()<<"("<<
 			(int)best->second.first->getPlayer()->getPlayer()<<")"<<std::endl;
 			game.attack(best->first, best->second.first);
@@ -242,7 +248,7 @@ int main() {
 			short num = best->first->getArmy();
 			num *= best->second.second;
 			game.move(best->first, best->second.first, num);
-			std::cout<<(int)game.getPlayer()->getPlayer()<<" moves "<<num
+			std::cout<<(int)player->getPlayer()<<" moves "<<num
 			<<" from "<<best->first->getName()<<" to "<<
 			best->second.first->getName()<<std::endl;
 		}
@@ -250,5 +256,5 @@ int main() {
 		game.print_data();
 	}
 
-	std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
+	std::cout<<"Player "<<(int)player->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
 }
