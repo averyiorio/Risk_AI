@@ -45,4 +45,6 @@ AI Logic
 		-6 inputs
 			-is it owned by the same player as above? (0,1)
 			-If its owned by the same player as as the territory in question, hopefully the AI will understand that those territories will also react depending on what you do to that territory
-		-
+		-1 input
+			-how many reserve troops does the AI have? ReLu(#)
+			**Need to think about where to deploy troops
