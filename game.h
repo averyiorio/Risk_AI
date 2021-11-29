@@ -4,9 +4,12 @@
 #include <vector>
 #include <map>
 #include <list>
+#include "json.hpp"
 #include "player.h"
 #include "card.h"
 #include "territory.h"
+
+using json = nlohmann::json;
 
 class Game {
 public:
@@ -37,6 +40,7 @@ public:
 	std::map<char, Player>& getPlayers() { return players; }
 
 	void print_data() const;
+	void print_data(json& output) const;
 
 	Territory& getTerritory(char i)  { return territories[i]; };
 

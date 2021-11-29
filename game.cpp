@@ -12,6 +12,9 @@
 #include "card.h"
 #include "territory.h"
 #include "game.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
 	
 void Game::addPlayer(char index) {
 	players[index] = Player(index);
@@ -59,6 +62,12 @@ void Game::print_data() const {
 		territories[i].print();
 	}
 	std::cout<<std::endl;
+}
+
+void Game::print_data(json& output) const {
+	for(unsigned int i = 0; i < territories.size(); ++i) {
+		territories[i].getData(output, turn);
+	}
 }
 
 char roll_dice() {

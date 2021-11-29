@@ -39,7 +39,6 @@ private:
 	char num_territories = 0;
 	std::list<Territory*> territories;
 	std::list<Card> cards;
-	std::map<char, char> continents;
 };
 
 #endif

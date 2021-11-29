@@ -1,12 +1,15 @@
 #include <list>
 #include <vector>
 #include <iostream>
+#include <iomanip>
 #include <stdlib.h>
 #include "territory.h"
 #include "maps.h"
 #include "card.h"
 #include "game.h"
+#include "json.hpp"
 
+using json = nlohmann::json;
 
 typedef std::map<char, std::pair<char, char>> CONTINENT_DATA;
 
@@ -188,6 +191,7 @@ int main() {
 	
 	game.print_data();
 
+	json output;
 	while(game.getPlayers().size() > 1) {
 
 		Player * player = game.getPlayer();
@@ -254,7 +258,10 @@ int main() {
 		}
 		game.nextPlayer();
 		game.print_data();
+		game.print_data(output);
 	}
 
 	std::cout<<"Player "<<(int)game.getPlayer()->getPlayer()<<" wins in "<<game.getTurn()<<" turns"<<std::endl;
+	std::ofstream o("output.json");
+	o << std::setw(4) << output << std::endl;
 }

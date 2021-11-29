@@ -1,8 +1,12 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <iomanip>
 #include "territory.h"
 #include "player.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
 
 
 //This function adds the adjacent territory
@@ -34,4 +38,9 @@ void Territory::print() const {
         std::cout << "Player " << (int)(player->getPlayer()) << std::endl;
     }
     std::cout << "\tCurrently holds " << army << " units" << std::endl;
+}
+
+void Territory::getData(json& output, int turn) const {
+    output[turn][name]["player"] = (int)player->getPlayer();
+    output[turn][name]["armies"] = army;   
 }

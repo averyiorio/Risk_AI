@@ -10,6 +10,9 @@ class Territory;
 
 #include "player.h"
 #include "game.h"
+#include "json.hpp"
+
+using json = nlohmann::json;
 
 class Territory {
 public:
@@ -35,6 +38,7 @@ public:
 	bool operator<(const Territory& right) {return name < right.getName(); }
 
 	void print() const;
+	void getData(json& output, int turn) const;
 
 private:
 	//Holds the name of the territory
