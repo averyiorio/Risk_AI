@@ -242,16 +242,22 @@ int main() {
 
 	//START GAME STUFF
 
-	for(int i = 0; i < 100; ++i) {
+	int games = 5000;
+	for(int i = 0; i < games; ++i) {
 		Game game(cards);
 		territories.clear();
 		cd.clear();
 		read_map(file, territories, cd, game);
 		runGame(game, players, cd, i);
-		std::cout<<"done with game "<<i<<std::endl;
+
+		std::cout << "\r" << (int)(i/(games/100)) << "% completed: ";
+		std::cout << "[" << std::setw(20) << std::string(i/(games/20), 'X') << "]";
+		std::cout.flush();
+
 		players++;
 		if(players > 6) {
 			players = 2;
 		}
 	}
+	std::cout << "\r" << "100% completed: [XXXXXXXXXXXXXXXXXXXX]" << std::endl;
 }
