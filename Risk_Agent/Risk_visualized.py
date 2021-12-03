@@ -51,7 +51,7 @@ while not done:
         turn_number = pygame.draw.rect(screen, 'blue', [10, 500, 40, 40])
         label = myfont.render(str(turn), 1, 'black')
         screen.blit(label, (10, 500))
-        time.sleep(2)
+        time.sleep(0.5)
         pygame.display.flip()
         turn += 1
 

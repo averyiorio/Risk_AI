@@ -7,6 +7,7 @@
 #include "maps.h"
 #include "card.h"
 #include "game.h"
+#include "heuristic.h"
 #include "json.hpp"
 
 using json = nlohmann::json;
@@ -148,10 +149,15 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 
 	for(char p = 0; p < players; ++p) {
 		for(int i = 1; i < armies[p]; ++i) {
-			deploy_weights dweights = generateDeployWeights(game);
+			deploy_weights dweights;
+			if(game.getPlayer()->getPlayer() == 0) {
+				dweights = generateHeuristicDeploy(game);
+			} else {
+				dweights = generateDeployWeights(game);
+			}
 			trimDeploy(dweights, game);
 			deploy_weights::iterator best = dweights.begin();
-			for(deploy_weights::iterator itr = dweights.begin(); itr != dweights.end(); ++itr) {	
+			for(deploy_weights::iterator itr = dweights.begin(); itr != dweights.end(); ++itr) {
 				if(itr->second > best->second) {
 					best = itr;
 				}
@@ -165,7 +171,6 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 
 	json output;
 	while(game.getPlayers().size() > 1) {
-
 		Player * player = game.getPlayer();
 		short armies = player->getIncome(cd);
 		std::list<Card> pcards = player->getCards();
@@ -174,7 +179,12 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 		}
 		std::map<Territory*, int> deploy_map;
 		for(int i = 0; i < armies; ++i) {
-			deploy_weights dweights = generateDeployWeights(game);
+			deploy_weights dweights;
+			if(game.getPlayer()->getPlayer() == 0) {
+				dweights = generateHeuristicDeploy(game);
+			} else {
+				dweights = generateDeployWeights(game);
+			}
 			trimDeploy(dweights, game);
 			deploy_weights::iterator best = dweights.begin();
 			for(deploy_weights::iterator itr = dweights.begin(); itr != dweights.end(); ++itr) {
@@ -224,7 +234,7 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 }
 
 int main() {
-	int players = 2;
+	int players = 4;
 	std::string file = "classic";
 	
 	srand((unsigned) time(0));
@@ -242,7 +252,11 @@ int main() {
 
 	//START GAME STUFF
 
-	int games = 5000;
+	int games = 1000;
+	std::vector<double> numVictories;
+	for(int i = 0; i < players; i++) {
+		numVictories.push_back(0);
+	}
 	for(int i = 0; i < games; ++i) {
 		Game game(cards);
 		territories.clear();
@@ -250,14 +264,15 @@ int main() {
 		read_map(file, territories, cd, game);
 		runGame(game, players, cd, i);
 
+		numVictories[game.getPlayer()->getPlayer()]++;
+
 		std::cout << "\r" << (int)(i/(games/100)) << "% completed: ";
 		std::cout << "[" << std::setw(20) << std::string(i/(games/20), 'X') << "]";
 		std::cout.flush();
-
-		players++;
-		if(players > 6) {
-			players = 2;
-		}
 	}
 	std::cout << "\r" << "100% completed: [XXXXXXXXXXXXXXXXXXXX]" << std::endl;
+	for(int i = 0; i < players; i++) {
+		std::cout<<"\tPlayer " << i << " had a " << (numVictories[i]/games)*100 <<
+		"% winrate" << std::endl;
+	}
 }
