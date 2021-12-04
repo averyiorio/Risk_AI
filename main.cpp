@@ -1,6 +1,7 @@
 #include <list>
 #include <vector>
 #include <iostream>
+#include <fstream>
 #include <iomanip>
 #include <stdlib.h>
 #include "territory.h"
@@ -270,14 +271,13 @@ int main() {
 			numVictories.push_back(0);
 		}
 		std::vector<double> weights;
-		for(int i = 0; i < 12; ++i) {
-			weights.push_back(((double) rand() / (RAND_MAX)));
-			if((i+1)%4 == 0) {
-				double tot = weights[i-3] + weights[i-2] + weights[i-1] + weights[i];
-				weights[i-3] /= tot; 
-				weights[i-2] /= tot; 
-				weights[i-1] /= tot; 
-				weights[i] /= tot; 
+		std::ifstream istr("weights.txt");
+		std::string in;
+		while(istr>>in) {
+			if(in[0] == '#') {
+				double weight = 0;
+				istr>>weight;
+				weights.push_back(weight);
 			}
 		}
 		for(int i = 0; i < games; ++i) {
@@ -298,11 +298,11 @@ int main() {
 		if(numVictories[0] > best_weights.first) {
 			best_weights = std::make_pair(numVictories[0], weights);
 		}
-	}
-	std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
-	"% winrate"<<std::endl;
-	std::cout<<"Weights were:"<<std::endl;
-	for(unsigned int i = 0; i < best_weights.second.size(); i++) {
-		std::cout<<"\t"<<best_weights.second[i]<<std::endl;
+		std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
+		"% winrate"<<std::endl;
+		std::cout<<"Weights were:"<<std::endl;
+		for(unsigned int i = 0; i < best_weights.second.size(); i++) {
+			std::cout<<"\t"<<best_weights.second[i]<<std::endl;
+		}
 	}
 }
