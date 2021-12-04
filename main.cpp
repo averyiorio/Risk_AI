@@ -58,7 +58,6 @@ void trimMove(move_weights& weights, const Game& g) {
 	 	//if the attacking terriroy is not owned by the player
 	 	if(w_itr->first->getPlayer() != p || w_itr->second.first->getPlayer() != p) {
 	 		w_itr->second.second = 0;
-
 	 	}
 	 	else {
 	 		//Check if they are directly adjacent or not
@@ -115,13 +114,13 @@ attack_weights generateAttackWeights(const Game& g) {
 	return weights;
 }
 
-attack_weights generateMoveWeights(const Game& g) {
+move_weights generateMoveWeights(const Game& g) {
 	Player * p = g.getPlayer();
 	std::list<Territory*> territories = p->getTerritories();
 	std::list<Territory*>::const_iterator ter_itr1 = territories.begin();
 	std::list<Territory*>::const_iterator ter_itr2;
 
-	attack_weights weights;
+	move_weights weights;
 
 	for(; ter_itr1 != territories.end(); ++ter_itr1) {
 		for(ter_itr2 = territories.begin(); ter_itr2 != territories.end(); ++ter_itr2) {
@@ -134,7 +133,7 @@ attack_weights generateMoveWeights(const Game& g) {
 	return weights;
 }
 
-void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
+void runGame(Game& game, int players,  CONTINENT_DATA cd, int i, const std::vector<double>& weights) {
 	for(int i = 0; i < players; ++i) {
 		game.addPlayer(i);
 	}
@@ -151,7 +150,7 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 		for(int i = 1; i < armies[p]; ++i) {
 			deploy_weights dweights;
 			if(game.getPlayer()->getPlayer() == 0) {
-				dweights = generateHeuristicDeploy(game);
+				dweights = generateHeuristicDeploy(game, weights);
 			} else {
 				dweights = generateDeployWeights(game);
 			}
@@ -181,7 +180,7 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 		for(int i = 0; i < armies; ++i) {
 			deploy_weights dweights;
 			if(game.getPlayer()->getPlayer() == 0) {
-				dweights = generateHeuristicDeploy(game);
+				dweights = generateHeuristicDeploy(game, weights);
 			} else {
 				dweights = generateDeployWeights(game);
 			}
@@ -198,7 +197,12 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 
 
 		while(true) {
-			attack_weights aweights = generateAttackWeights(game);
+			attack_weights aweights;
+			if(game.getPlayer()->getPlayer() == 0) {
+				aweights = generateHeuristicAttack(game, weights);
+			} else {
+				aweights = generateAttackWeights(game);
+			}
 			trimAttack(aweights, game);
 			attack_weights::iterator best = aweights.begin();
 			for(attack_weights::iterator itr = aweights.begin(); itr != aweights.end(); ++itr) {
@@ -212,7 +216,12 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i) {
 			game.attack(best->first, best->second.first);
 		}
 
-		move_weights mweights = generateMoveWeights(game);
+		move_weights mweights;
+		if(game.getPlayer()->getPlayer() == 0) {
+			mweights = generateHeuristicMove(game, weights);
+		} else {
+			mweights = generateMoveWeights(game);
+		}
 		trimMove(mweights, game);
 		move_weights::iterator best = mweights.begin();
 		for(move_weights::iterator itr = mweights.begin(); itr != mweights.end(); ++itr) {
@@ -252,27 +261,41 @@ int main() {
 
 	//START GAME STUFF
 
-	int games = 1000;
-	std::vector<double> numVictories;
-	for(int i = 0; i < players; i++) {
-		numVictories.push_back(0);
-	}
-	for(int i = 0; i < games; ++i) {
-		Game game(cards);
-		territories.clear();
-		cd.clear();
-		read_map(file, territories, cd, game);
-		runGame(game, players, cd, i);
+	int games = 100;
+	std::pair<double, std::vector<double>> best_weights;
+	best_weights.first = 0;
+	for(int j = 0; j < 50; j++) {
+		std::vector<double> numVictories;
+		for(int i = 0; i < players; i++) {
+			numVictories.push_back(0);
+		}
+		std::vector<double> weights;
+		for(int i = 0; i < 12; ++i) {
+			weights.push_back(((double) rand() / (RAND_MAX)));
+		}
+		for(int i = 0; i < games; ++i) {
 
-		numVictories[game.getPlayer()->getPlayer()]++;
+			Game game(cards);
+			territories.clear();
+			cd.clear();
+			read_map(file, territories, cd, game);
+			runGame(game, players, cd, i, weights);
 
-		std::cout << "\r" << (int)(i/(games/100)) << "% completed: ";
-		std::cout << "[" << std::setw(20) << std::string(i/(games/20), 'X') << "]";
-		std::cout.flush();
+			numVictories[game.getPlayer()->getPlayer()]++;
+
+			std::cout << "\r" << (int)(i/(games/100)) << "% completed: ";
+			std::cout << "[" << std::setw(20) << std::string(i/(games/20), '8') << "]";
+			std::cout.flush();
+		}
+		std::cout<<"Completed simulation "<<j<<std::endl;
+		if(numVictories[0] > best_weights.first) {
+			best_weights = std::make_pair(numVictories[0], weights);
+		}
 	}
-	std::cout << "\r" << "100% completed: [XXXXXXXXXXXXXXXXXXXX]" << std::endl;
-	for(int i = 0; i < players; i++) {
-		std::cout<<"\tPlayer " << i << " had a " << (numVictories[i]/games)*100 <<
-		"% winrate" << std::endl;
+	std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
+	"% winrate"<<std::endl;
+	std::cout<<"Weights were:"<<std::endl;
+	for(unsigned int i = 0; i < best_weights.second.size(); i++) {
+		std::cout<<"\t"<<best_weights.second[i]<<std::endl;
 	}
 }
