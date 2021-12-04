@@ -272,6 +272,13 @@ int main() {
 		std::vector<double> weights;
 		for(int i = 0; i < 12; ++i) {
 			weights.push_back(((double) rand() / (RAND_MAX)));
+			if((i+1)%4 == 0) {
+				double tot = weights[i-3] + weights[i-2] + weights[i-1] + weights[i];
+				weights[i-3] /= tot; 
+				weights[i-2] /= tot; 
+				weights[i-1] /= tot; 
+				weights[i] /= tot; 
+			}
 		}
 		for(int i = 0; i < games; ++i) {
 
