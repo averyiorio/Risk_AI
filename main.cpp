@@ -298,11 +298,11 @@ int main() {
 		if(numVictories[0] > best_weights.first) {
 			best_weights = std::make_pair(numVictories[0], weights);
 		}
-	}
-	std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
-	"% winrate"<<std::endl;
-	std::cout<<"Weights were:"<<std::endl;
-	for(unsigned int i = 0; i < best_weights.second.size(); i++) {
-		std::cout<<"\t"<<best_weights.second[i]<<std::endl;
+		std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
+		"% winrate"<<std::endl;
+		std::cout<<"Weights were:"<<std::endl;
+		for(unsigned int i = 0; i < best_weights.second.size(); i++) {
+			std::cout<<"\t"<<best_weights.second[i]<<std::endl;
+		}
 	}
 }
