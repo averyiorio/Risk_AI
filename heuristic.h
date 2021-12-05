@@ -119,7 +119,7 @@ attack_weights generateHeuristicAttack(Game& g, const std::vector<double>& k_wei
 			num += generateAdjacencyWeight(adj_itr->first, g, k_weights[5]);
 
 			short troop_diff = (*ter_itr)->getArmy() - adj_itr->first->getArmy();
-			short total_troops = (*ter_itr)->getArmy() - adj_itr->first->getArmy();
+			short total_troops = (*ter_itr)->getArmy() + adj_itr->first->getArmy();
 
 			num += (1-sigmoid(troop_diff/total_troops)) * k_weights[6];
 			num += ((double) rand() / (RAND_MAX)) * k_weights[7];

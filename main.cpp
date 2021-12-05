@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iomanip>
 #include <stdlib.h>
+#include <algorithm>
 #include "territory.h"
 #include "maps.h"
 #include "card.h"
@@ -262,10 +263,10 @@ int main() {
 
 	//START GAME STUFF
 
-	int games = 100;
+	int games = 1000;
 	std::pair<double, std::vector<double>> best_weights;
 	best_weights.first = 0;
-	for(int j = 0; j < 50; j++) {
+	for(int j = 0; j < 1000; j++) {
 		std::vector<double> numVictories;
 		for(int i = 0; i < players; i++) {
 			numVictories.push_back(0);
@@ -273,11 +274,15 @@ int main() {
 		std::vector<double> weights;
 		std::ifstream istr("weights.txt");
 		std::string in;
+		int c = 0;
 		while(istr>>in) {
 			if(in[0] == '#') {
 				double weight = 0;
 				istr>>weight;
+				weight += (((double) rand() / (RAND_MAX)) - 0.5)/8;
+				weight = std::max((double)0, weight);
 				weights.push_back(weight);
+				c++;
 			}
 		}
 		for(int i = 0; i < games; ++i) {
@@ -290,9 +295,13 @@ int main() {
 
 			numVictories[game.getPlayer()->getPlayer()]++;
 
-			std::cout << "\r" << (int)(i/(games/100)) << "% completed: ";
-			std::cout << "[" << std::setw(20) << std::string(i/(games/20), '8') << "]";
+			std::cout << "\r" << (int)(i/(games/100)) << "% completed, ";
+			std::cout << (int)(((numVictories[0]+1)/(i+1))*100) << "% winrate: ";
+			std::cout << "[" << std::setw(20) << std::string(i/(games/20), '#') << "]";
 			std::cout.flush();
+			if(i > 100 && numVictories[0]/i < 0.58) {
+				break;
+			} 
 		}
 		std::cout<<"Completed simulation "<<j<<std::endl;
 		if(numVictories[0] > best_weights.first) {
