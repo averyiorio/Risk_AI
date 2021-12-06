@@ -23,7 +23,7 @@ marker_locations = [(651, 232), (58, 128), (151, 192), (304, 513),
                     (674, 135), (296, 370), (822, 469), (434, 251), (169, 251), (841, 112)]
 pygame.init()
 myfont = pygame.font.SysFont("monospace", 15)
-with open('output.json', 'r') as file:
+with open('random_wins.json', 'r') as file:
     game_data = json.load(file)[1:]
 
 def display_board(turn_number):
@@ -51,7 +51,7 @@ while not done:
         turn_number = pygame.draw.rect(screen, 'blue', [10, 500, 40, 40])
         label = myfont.render(str(turn), 1, 'black')
         screen.blit(label, (10, 500))
-        time.sleep(0.5)
+        time.sleep(2)
         pygame.display.flip()
         turn += 1
 

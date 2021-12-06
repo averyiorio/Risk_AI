@@ -1,0 +1,3233 @@
+[
+    null,
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 2
+        },
+        "China": {
+            "armies": 1,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 5,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 5,
+            "player": 3
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 1
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 1
+        },
+        "Indonesia": {
+            "armies": 2,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 3,
+            "player": 3
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 1
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 1
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 3
+        },
+        "Scandinavia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 1
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 2
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 1
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 1
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 2
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 1,
+            "player": 3
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 1
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 1
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 3
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 1
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 1
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 3
+        },
+        "Scandinavia": {
+            "armies": 4,
+            "player": 3
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 1
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Western United States": {
+            "armies": 5,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 1
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 2
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 1,
+            "player": 3
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 1
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 1
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 3
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 1
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 2
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 2,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 3
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 1
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 3
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 2
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 1,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 1
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 1
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 3
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 1
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 3
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Western United States": {
+            "armies": 2,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 3
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 2,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 2
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 1,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 1
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 1
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 3
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 2
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Western United States": {
+            "armies": 2,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 2,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 1,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 3
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 3
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 3,
+            "player": 2
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 1
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 2
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 1,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 2
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 2
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 3,
+            "player": 2
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 1
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 2
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 2
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 2,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 3
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 3
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 3
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 3,
+            "player": 2
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 1,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 2
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 2,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 2,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 3
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 2
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 2
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 1
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 2
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 2,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 2
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 2
+        },
+        "Egypt": {
+            "armies": 3,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 1
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 2,
+            "player": 2
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 2
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 3,
+            "player": 2
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 2,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 1
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 3,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 2
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 2
+        },
+        "New Guinea": {
+            "armies": 2,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 3
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 2,
+            "player": 1
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 2,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 1,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 3,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 3,
+            "player": 3
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 2,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 2
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 2
+        },
+        "New Guinea": {
+            "armies": 2,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 14,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 2,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 3,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 1,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 2
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 4,
+            "player": 2
+        },
+        "New Guinea": {
+            "armies": 2,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 1,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 14,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 1,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 2,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 4,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 3,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 1,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 2,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 4,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 3,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 6,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 2,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 14,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 2,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 1,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 3,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 1,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 4,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 3,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 2,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 2,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 2,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 3,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 1,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 6,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 2,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 2,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 1,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 14,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 2,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 2,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 3,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 1,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 2,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 2,
+            "player": 3
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 5,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 3,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 2,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 1,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Kamchatka": {
+            "armies": 1,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 1,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 3,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 4,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 1,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 7,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 4,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 3,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 3,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 2,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 2,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 14,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 2,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 2,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 3,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 4,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 2,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 6,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 3,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 4,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 2,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Kamchatka": {
+            "armies": 2,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 3,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 4,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 4,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 2,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 8,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 4,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 3,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Western Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 4,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 2,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 2,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 14,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 2,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 2,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 3,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 4,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 2,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 6,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 3,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 4,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 2,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Kamchatka": {
+            "armies": 2,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 3,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 1,
+            "player": 3
+        },
+        "North Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 4,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 4,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 2,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 8,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 4,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 3,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 1,
+            "player": 3
+        },
+        "Western Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 4,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 2,
+            "player": 0
+        }
+    },
+    {
+        "Afghanistan": {
+            "armies": 4,
+            "player": 0
+        },
+        "Alaska": {
+            "armies": 15,
+            "player": 0
+        },
+        "Alberta": {
+            "armies": 2,
+            "player": 0
+        },
+        "Argentina": {
+            "armies": 2,
+            "player": 0
+        },
+        "Brazil": {
+            "armies": 4,
+            "player": 0
+        },
+        "Central America": {
+            "armies": 2,
+            "player": 0
+        },
+        "China": {
+            "armies": 5,
+            "player": 0
+        },
+        "Congo": {
+            "armies": 2,
+            "player": 0
+        },
+        "East Africa": {
+            "armies": 3,
+            "player": 0
+        },
+        "Eastern Australia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Eastern United States": {
+            "armies": 1,
+            "player": 0
+        },
+        "Egypt": {
+            "armies": 6,
+            "player": 0
+        },
+        "Great Britain": {
+            "armies": 3,
+            "player": 0
+        },
+        "Greenland": {
+            "armies": 4,
+            "player": 0
+        },
+        "Iceland": {
+            "armies": 2,
+            "player": 0
+        },
+        "India": {
+            "armies": 1,
+            "player": 0
+        },
+        "Indonesia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Irkutsk": {
+            "armies": 1,
+            "player": 0
+        },
+        "Japan": {
+            "armies": 1,
+            "player": 0
+        },
+        "Kamchatka": {
+            "armies": 2,
+            "player": 0
+        },
+        "Madagascar": {
+            "armies": 3,
+            "player": 0
+        },
+        "Middle East": {
+            "armies": 1,
+            "player": 0
+        },
+        "Mongolia": {
+            "armies": 1,
+            "player": 0
+        },
+        "New Guinea": {
+            "armies": 8,
+            "player": 0
+        },
+        "North Africa": {
+            "armies": 5,
+            "player": 0
+        },
+        "Northern Europe": {
+            "armies": 5,
+            "player": 0
+        },
+        "Northwest Territory": {
+            "armies": 4,
+            "player": 0
+        },
+        "Ontario": {
+            "armies": 1,
+            "player": 0
+        },
+        "Peru": {
+            "armies": 5,
+            "player": 0
+        },
+        "Quebec": {
+            "armies": 2,
+            "player": 0
+        },
+        "Scandinavia": {
+            "armies": 1,
+            "player": 0
+        },
+        "Siam": {
+            "armies": 2,
+            "player": 0
+        },
+        "Siberia": {
+            "armies": 8,
+            "player": 0
+        },
+        "South Africa": {
+            "armies": 4,
+            "player": 0
+        },
+        "Southern Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Ukraine": {
+            "armies": 1,
+            "player": 0
+        },
+        "Ural": {
+            "armies": 1,
+            "player": 0
+        },
+        "Venezuela": {
+            "armies": 4,
+            "player": 0
+        },
+        "Western Australia": {
+            "armies": 11,
+            "player": 0
+        },
+        "Western Europe": {
+            "armies": 2,
+            "player": 0
+        },
+        "Western United States": {
+            "armies": 5,
+            "player": 0
+        },
+        "Yakursk": {
+            "armies": 2,
+            "player": 0
+        }
+    }
+]

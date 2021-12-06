@@ -151,11 +151,11 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i, const std::vect
 	for(char p = 0; p < players; ++p) {
 		for(int i = 1; i < armies[p]; ++i) {
 			deploy_weights dweights;
-			if(game.getPlayer()->getPlayer() == 0) {
+			// if(game.getPlayer()->getPlayer() == 0 || game.getPlayer()->getPlayer() == 3) {
 				dweights = generateHeuristicDeploy(game, weights);
-			} else {
-				dweights = generateDeployWeights(game);
-			}
+			// } else {
+			// 	dweights = generateDeployWeights(game);
+			// }
 			trimDeploy(dweights, game);
 			deploy_weights::iterator best = dweights.begin();
 			for(deploy_weights::iterator itr = dweights.begin(); itr != dweights.end(); ++itr) {
@@ -181,11 +181,11 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i, const std::vect
 		std::map<Territory*, int> deploy_map;
 		for(int i = 0; i < armies; ++i) {
 			deploy_weights dweights;
-			if(game.getPlayer()->getPlayer() == 0) {
+			// if(game.getPlayer()->getPlayer() == 0 || game.getPlayer()->getPlayer() == 3) {
 				dweights = generateHeuristicDeploy(game, weights);
-			} else {
-				dweights = generateDeployWeights(game);
-			}
+			// } else {
+			// 	dweights = generateDeployWeights(game);
+			// }
 			trimDeploy(dweights, game);
 			deploy_weights::iterator best = dweights.begin();
 			for(deploy_weights::iterator itr = dweights.begin(); itr != dweights.end(); ++itr) {
@@ -200,11 +200,11 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i, const std::vect
 
 		while(true) {
 			attack_weights aweights;
-			if(game.getPlayer()->getPlayer() == 0) {
+			// if(game.getPlayer()->getPlayer() == 0 || game.getPlayer()->getPlayer() == 3) {
 				aweights = generateHeuristicAttack(game, weights);
-			} else {
-				aweights = generateAttackWeights(game);
-			}
+			// } else {
+			// 	aweights = generateAttackWeights(game);
+			// }
 			trimAttack(aweights, game);
 			attack_weights::iterator best = aweights.begin();
 			for(attack_weights::iterator itr = aweights.begin(); itr != aweights.end(); ++itr) {
@@ -219,11 +219,11 @@ void runGame(Game& game, int players,  CONTINENT_DATA cd, int i, const std::vect
 		}
 
 		move_weights mweights;
-		if(game.getPlayer()->getPlayer() == 0) {
+		// if(game.getPlayer()->getPlayer() == 0 || game.getPlayer()->getPlayer() == 3) {
 			mweights = generateHeuristicMove(game, weights);
-		} else {
-			mweights = generateMoveWeights(game);
-		}
+		// } else {
+		// 	mweights = generateMoveWeights(game);
+		// }
 		trimMove(mweights, game);
 		move_weights::iterator best = mweights.begin();
 		for(move_weights::iterator itr = mweights.begin(); itr != mweights.end(); ++itr) {
@@ -279,8 +279,8 @@ int main() {
 			if(in[0] == '#') {
 				double weight = 0;
 				istr>>weight;
-				weight += (((double) rand() / (RAND_MAX)) - 0.5)/8;
-				weight = std::max((double)0, weight);
+				// weight += (((double) rand() / (RAND_MAX)) - 0.5)/8;
+				// weight = std::max((double)0, weight);
 				weights.push_back(weight);
 				c++;
 			}
@@ -294,24 +294,32 @@ int main() {
 			runGame(game, players, cd, i, weights);
 
 			numVictories[game.getPlayer()->getPlayer()]++;
+			if(game.getPlayer()->getPlayer() != 0 && game.getPlayer()->getPlayer() != 3) {
+				std::cout<<i;
+			}
 
 			std::cout << "\r" << (int)(i/(games/100)) << "% completed, ";
 			std::cout << (int)(((numVictories[0]+1)/(i+1))*100) << "% winrate: ";
 			std::cout << "[" << std::setw(20) << std::string(i/(games/20), '#') << "]";
 			std::cout.flush();
-			if(i > 100 && numVictories[0]/i < 0.58) {
-				break;
-			} 
+			// if(i > 100 && numVictories[0]/i < 0.58) {
+			// 	break;
+			// } 
 		}
 		std::cout<<"Completed simulation "<<j<<std::endl;
-		if(numVictories[0] > best_weights.first) {
-			best_weights = std::make_pair(numVictories[0], weights);
+		for(unsigned int i  = 0; i < numVictories.size(); i++) {
+			std::cout<<"\tPlayer "<<i<<" had a "<<(numVictories[i]/games)*100
+			<<"% winrate"<<std::endl;
 		}
-		std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
-		"% winrate"<<std::endl;
-		std::cout<<"Weights were:"<<std::endl;
-		for(unsigned int i = 0; i < best_weights.second.size(); i++) {
-			std::cout<<"\t"<<best_weights.second[i]<<std::endl;
-		}
+
+		// if(numVictories[0] > best_weights.first) {
+		// 	best_weights = std::make_pair(numVictories[0], weights);
+		// }
+		// std::cout<<"Best weights had a " << (best_weights.first/games)*100 <<
+		// "% winrate"<<std::endl;
+		// std::cout<<"Weights were:"<<std::endl;
+		// for(unsigned int i = 0; i < best_weights.second.size(); i++) {
+		// 	std::cout<<"\t"<<best_weights.second[i]<<std::endl;
+		// }
 	}
 }

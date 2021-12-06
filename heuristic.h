@@ -52,20 +52,20 @@ double generateContinentWeight(Territory * terr, Game& g, double weight) {
 	return ratio * weight;
 }
 
-double generateAdjacencyWeight(Territory * terr, Game& g, double weight) {
-	Player * curr = g.getPlayer();
-	std::vector<std::pair<Territory *, bool>> adjacent = terr->getAdjacent();
-	double ratio = 0;
-	for(unsigned int i = 0; i < adjacent.size(); i++) {
-		Territory * curr_terr = adjacent[i].first;
-		if(curr_terr->getPlayer() != curr) {
-			ratio++;
-		}
-	}
-	ratio /= adjacent.size();
+// double generateAdjacencyWeight(Territory * terr, Game& g, double weight) {
+// 	Player * curr = g.getPlayer();
+// 	std::vector<std::pair<Territory *, bool>> adjacent = terr->getAdjacent();
+// 	double ratio = 0;
+// 	for(unsigned int i = 0; i < adjacent.size(); i++) {
+// 		Territory * curr_terr = adjacent[i].first;
+// 		if(curr_terr->getPlayer() != curr) {
+// 			ratio++;
+// 		}
+// 	}
+// 	ratio /= adjacent.size();
 
-	return ratio * weight;
-}
+// 	return ratio * weight;
+// }
 
 double sigmoid(double x) {
 	double exponent = std::exp(10*(x-.05));
@@ -82,7 +82,7 @@ deploy_weights generateHeuristicDeploy(Game& g, const std::vector<double>& k_wei
 	for(; ter_itr != territories.end(); ++ter_itr) {
 		double num = 0;
 		num += generateContinentWeight(*ter_itr, g, k_weights[0]);
-		num += generateAdjacencyWeight(*ter_itr, g, k_weights[1]);
+		// num += generateAdjacencyWeight(*ter_itr, g, k_weights[1]);
 
 		std::vector<std::pair<Territory *, bool>> adjacent = (*ter_itr)->getAdjacent();
 		double ratio = 0;
@@ -116,7 +116,7 @@ attack_weights generateHeuristicAttack(Game& g, const std::vector<double>& k_wei
 		for(; adj_itr != adj_territories.end(); ++adj_itr) {
 			double num = 0;
 			num += generateContinentWeight(adj_itr->first, g, k_weights[4]);
-			num += generateAdjacencyWeight(adj_itr->first, g, k_weights[5]);
+			// num += generateAdjacencyWeight(adj_itr->first, g, k_weights[5]);
 
 			short troop_diff = (*ter_itr)->getArmy() - adj_itr->first->getArmy();
 			short total_troops = (*ter_itr)->getArmy() + adj_itr->first->getArmy();
@@ -144,7 +144,7 @@ move_weights generateHeuristicMove(Game& g, const std::vector<double>& k_weights
 		for(ter_itr2 = territories.begin(); ter_itr2 != territories.end(); ++ter_itr2) {
 			double num1 = 0;
 			num1 += generateContinentWeight(*ter_itr1, g, k_weights[8]);
-			num1 += generateAdjacencyWeight(*ter_itr1, g, k_weights[9]);
+			// num1 += generateAdjacencyWeight(*ter_itr1, g, k_weights[9]);
 
 			std::vector<std::pair<Territory *, bool>> adjacent1 = (*ter_itr1)->getAdjacent();
 			double ratio1 = 0;
@@ -160,7 +160,7 @@ move_weights generateHeuristicMove(Game& g, const std::vector<double>& k_weights
 
 			double num2 = 0;
 			num2 += generateContinentWeight(*ter_itr2, g, k_weights[8]);
-			num2 += generateAdjacencyWeight(*ter_itr2, g, k_weights[9]);
+			// num2 += generateAdjacencyWeight(*ter_itr2, g, k_weights[9]);
 
 			std::vector<std::pair<Territory *, bool>> adjacent2 = (*ter_itr2)->getAdjacent();
 			double ratio2 = 0;
